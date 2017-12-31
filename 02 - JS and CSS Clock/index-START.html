@@ -62,13 +62,48 @@
       background:black;
       position: absolute;
       top:50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all 0.05s;
+      transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1) 
     }
 
   </style>
 
   <script>
+    const secondHand = document.querySelector('.second-hand');
+    const minuteHand = document.querySelector('.min-hand');
+    const hourHand = document.querySelector('.hour-hand');
+
+    function setDate() {
+      const now = new Date();
+
+      //moving the second hand
+      const seconds = now.getSeconds();
+      const secondsDegrees = ((seconds / 60) * 360) + 90 ; //need to work with value that is total to 100. Had to add 90 due to the offset made in the CSS
+      secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+      
+      //moving the minute hand
+      const mins = now.getMinutes();
+      const minutesDegrees = ((mins / 60) * 360) + 90;
+      minuteHand.style.transform = `rotate(${minutesDegrees}deg)`;
+
+      //moving the hour hand
+      const hour = now.getHours();
+      const hoursDegrees = ((hour / 12) * 360) + 90;
+      hourHand.style.transform = `rotate(${hoursDegrees}deg)`;
+
+
+
+
+
+
+      
+    }
+    setInterval(setDate, 1000);
 
 
   </script>
 </body>
 </html>
+<!-->Finished 31-Dec-2017 <-->
