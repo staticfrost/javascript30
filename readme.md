@@ -10,8 +10,8 @@ Grab the course at [https://JavaScript30.com](https://JavaScript30.com)
 
 1. [x] ~~[JavaScript Drum Kit]~~ 31-12-2017
 2. [x] ~~[JS + CSS Clock]~~ 31-12-2017
-3. [ ] [CSS Variables]
-4. [ ] [Array Cardio, Day 1]
+3. [x] ~~[CSS Variables]~~ 27-06-2018
+4. [x] ~~[Array Cardio, Day 1]~~ 27-06-2018
 5. [ ] [Flex Panel Gallery]
 6. [ ] [Type Ahead]
 7. [ ] [Array Cardio, Day 2]
